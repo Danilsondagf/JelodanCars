@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter — JELODAN-CARS</title>
+    <meta name="description" content="Subscreva a newsletter da JELODAN-CARS e receba em primeira mão novidades, promoções e as últimas chegadas de viaturas.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jelodancars.ao/newsletter.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_AO">
+    <meta property="og:title" content="Newsletter — JELODAN-CARS">
+    <meta property="og:description" content="Subscreva a newsletter da JELODAN-CARS e receba em primeira mão novidades, promoções e as últimas chegadas de viaturas.">
+    <meta property="og:url" content="https://www.jelodancars.ao/newsletter.html">
+    <meta property="og:image" content="https://www.jelodancars.ao/MEDIA/Logo.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script>
+    (function () {
+        try {
+            var t = localStorage.getItem('jelodan-theme');
+            if (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+            if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        } catch (e) {}
+    })();
+    </script>
+    <script src="../JS/theme.js" defer></script>
+    <script src="../JS/cart.js" defer></script>
+    <script src="../JS/auth.js" defer></script>
+    <script src="../JS/newsletter.js" defer></script>
+    <!-- ============================================================
+         ANALITICA — Google Analytics (GA4)
+    ============================================================ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLLX9TY5J3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XLLX9TY5J3');
+    </script>
+
+    <!-- ============================================================
+         META PIXEL — desativado
+         Para ativar, substitua SEU_PIXEL_ID pelo ID real e remova os comentários.
+    ============================================================
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'SEU_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    -->
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo-link"><img src="../MEDIA/Logo.png" class="logo" alt="JELODAN-CARS"></a>
+    <div class="header-right">
+<nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <div class="nav-dropdown">
+            <a href="servicos.html" class="nav-dropdown-toggle">
+                Serviços
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="nav-dropdown-menu">
+                <a href="servicos.html#oficinas">Oficinas</a>
+                <a href="servicos.html#reboques">Reboques</a>
+                <a href="servicos.html#pecas-acessorios">Peças &amp; Acessórios</a>
+                <a href="servicos.html#mecanico-domicilio">Mecânico ao Domicílio</a>
+                <a href="servicos.html#estacoes-servico">Estações de Serviço</a>
+                <a href="servicos.html#seguradoras">Seguradoras</a>
+                <a href="agendar-test-drive.html">Agendar Test Drive</a>
+            </div>
+        </div>
+        <a href="portfolio.html">Galeria</a>
+        <a href="contactos.html">Contactos</a>
+    </nav>
+        <div class="header-actions">
+            <a href="carrinho.html" class="cart-btn" aria-label="Carrinho de compras">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span class="cart-count" id="cart-count" hidden>0</span>
+            </a>
+            <a href="entrar.html" class="btn-account" id="account-btn">Entrar</a>
+        </div>
+    </div>
+</header>
+
+<div class="page-banner">
+    <span class="breadcrumb">Fique a par</span>
+    <h1>Newsletter</h1>
+    <p class="subtitle">Receba as novidades do mercado automóvel e as promoções exclusivas da JELODAN-CARS.</p>
+</div>
+
+<section class="newsletter-section">
+
+    <p>Subscreva a nossa newsletter gratuita e seja o primeiro a saber sobre novos veículos em stock, promoções especiais, dicas de manutenção e artigos do nosso blog.</p>
+
+    <div class="newsletter-benefits">
+        <span class="newsletter-benefit">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Novos veículos em stock
+        </span>
+        <span class="newsletter-benefit">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Promoções exclusivas
+        </span>
+        <span class="newsletter-benefit">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Dicas de manutenção
+        </span>
+        <span class="newsletter-benefit">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Artigos do blog
+        </span>
+        <span class="newsletter-benefit">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Sem spam, cancele quando quiser
+        </span>
+    </div>
+
+    <form id="newsletter-form" novalidate>
+        <h2>Insira o seu email</h2>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="O seu nome">
+        <span class="form-error" id="erro-nome"></span>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="o.seu@email.com">
+        <span class="form-error" id="erro-email"></span>
+
+        <button type="submit">Subscrever Newsletter</button>
+        <p class="form-feedback" id="newsletter-feedback" role="status" aria-live="polite"></p>
+    </form>
+
+</section>
+
+<footer>
+    <div class="footer-conteudo">
+        <div class="footer-marca">
+            <a href="index.html" class="logo-link"><img src="../MEDIA/Logo.png" class="logo" alt="JELODAN-CARS"></a>
+            <p>Compra e Venda de Carros com Segurança e Confiança</p>
+            <div class="footer-social">
+                <a href="https://wa.me/244976667108" class="footer-social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2c-5.523 0-10 4.477-10 10 0 1.766.463 3.489 1.34 5.007L2 22l5.126-1.32A9.958 9.958 0 0 0 12 22c5.523 0 10-4.477 10-10S17.524 2 12.001 2zm0 18.062a8.032 8.032 0 0 1-4.099-1.13l-.294-.175-3.043.784.812-2.968-.192-.304a8.03 8.03 0 0 1-1.232-4.269c0-4.437 3.612-8.049 8.05-8.049 4.437 0 8.048 3.612 8.048 8.049 0 4.438-3.611 8.062-8.05 8.062z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/jelodan_investimentos?igsh=aXl2eDJkMzF0bWhq&utm_source=qr" class="footer-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://www.facebook.com/share/1BFWyXyuZt/?mibextid=wwXIfr" class="footer-social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.02 3.657 9.184 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.877h2.773l-.443 2.91h-2.33V22c4.78-.756 8.437-4.92 8.437-9.94z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Navegação</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="portfolio.html">Galeria</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Informações</h4>
+            <ul>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">Perguntas Frequentes</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="politica.html">Política e Privacidade</a></li>
+                <li><a href="termos.html">Termos e Condições</a></li>
+                <li><a href="sitemap.html">Mapa do Site</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="footer-payments">
+        <span class="footer-payments-label">Formas de Pagamento:</span>
+        <div class="payment-methods">
+            <span class="payment-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="4.5" width="21" height="15" rx="2.5"></rect><line x1="1.5" y1="9.5" x2="22.5" y2="9.5"></line><line x1="5" y1="15" x2="9" y2="15"></line></svg>
+                Multicaixa
+            </span>
+            <span class="payment-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="1.5" width="12" height="21" rx="2.5"></rect><line x1="6" y1="18" x2="18" y2="18"></line></svg>
+                Multicaixa Express
+            </span>
+            <span class="payment-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"></path><line x1="4" y1="10" x2="20" y2="10"></line><line x1="5" y1="10" x2="5" y2="19"></line><line x1="10" y1="10" x2="10" y2="19"></line><line x1="14" y1="10" x2="14" y2="19"></line><line x1="19" y1="10" x2="19" y2="19"></line><line x1="3" y1="21" x2="21" y2="21"></line></svg>
+                Transferência Bancária
+            </span>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p>&copy; 2026 JELODAN-CARS. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
