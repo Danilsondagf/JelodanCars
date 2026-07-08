@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JELODAN-CARS — Compra e Venda de Viaturas em Angola</title>
+    <meta name="description" content="JELODAN-CARS: compra e venda de viaturas novas e seminovas em Angola, com segurança, confiança e as melhores marcas do mercado automóvel.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.jelodancars.ao/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_AO">
+    <meta property="og:title" content="JELODAN-CARS — Compra e Venda de Viaturas em Angola">
+    <meta property="og:description" content="JELODAN-CARS: compra e venda de viaturas novas e seminovas em Angola, com segurança, confiança e as melhores marcas do mercado automóvel.">
+    <meta property="og:url" content="https://www.jelodancars.ao/index.html">
+    <meta property="og:image" content="https://www.jelodancars.ao/MEDIA/Logo.png">
+    <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script>
+    (function () {
+        try {
+            var t = localStorage.getItem('jelodan-theme');
+            if (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+            if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        } catch (e) {}
+    })();
+    </script>
+    <script src="../JS/theme.js" defer></script>
+    <script src="../JS/cart.js" defer></script>
+    <script src="../JS/auth.js" defer></script>
+    <!-- ============================================================
+         ANALITICA — Google Analytics (GA4)
+    ============================================================ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLLX9TY5J3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XLLX9TY5J3');
+    </script>
+
+    <!-- ============================================================
+         META PIXEL — desativado
+         Para ativar, substitua SEU_PIXEL_ID pelo ID real e remova os comentários.
+    ============================================================
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'SEU_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    -->
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo-link"><img src="../MEDIA/Logo.png" class="logo" alt="JELODAN-CARS"></a>
+    <div class="header-right">
+<nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <div class="nav-dropdown">
+            <a href="servicos.html" class="nav-dropdown-toggle">
+                Serviços
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="nav-dropdown-menu">
+                <a href="servicos.html#oficinas">Oficinas</a>
+                <a href="servicos.html#reboques">Reboques</a>
+                <a href="servicos.html#pecas-acessorios">Peças &amp; Acessórios</a>
+                <a href="servicos.html#mecanico-domicilio">Mecânico ao Domicílio</a>
+                <a href="servicos.html#estacoes-servico">Estações de Serviço</a>
+                <a href="servicos.html#seguradoras">Seguradoras</a>
+                <a href="agendar-test-drive.html">Agendar Test Drive</a>
+            </div>
+        </div>
+        <a href="portfolio.html">Galeria</a>
+        <a href="contactos.html">Contactos</a>
+    </nav>
+        <div class="header-actions">
+            <a href="carrinho.html" class="cart-btn" aria-label="Carrinho de compras">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span class="cart-count" id="cart-count" hidden>0</span>
+            </a>
+            <a href="entrar.html" class="btn-account" id="account-btn">Entrar</a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <div class="page-hero-content">
+        <span class="hero-tag">Concessionária de Confiança em Angola</span>
+        <h1 class="hero-title">Dirija o<br><em>carro dos seus sonhos.</em></h1>
+        <p class="hero-subtitle">
+            Veículos selecionados para quem não abre mão de desempenho, estilo
+            e confiança. Mais de 14 anos a servir Angola com excelência.
+        </p>
+        <div class="hero-actions">
+            <a href="portfolio.html" class="btn-primary">Ver Galeria</a>
+            <a href="contactos.html" class="btn-ghost">Entrar em Contacto</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">320+</span>
+                <span class="stat-label">Veículos</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">14</span>
+                <span class="stat-label">Anos no mercado</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Satisfação</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- QUEM SOMOS (resumo) -->
+<section class="home-intro">
+    <div class="sobre-intro">
+        <h2>A JELODAN-CARS</h2>
+        <p>
+            Há mais de 14 anos a servir Angola, somos especialistas na compra e venda de
+            veículos novos e seminovos, com um processo transparente do início ao fim:
+            inspeção técnica rigorosa, documentação em dia, financiamento facilitado e
+            entrega segura em várias províncias. O nosso compromisso é simples — ajudá-lo
+            a encontrar o carro certo, com total confiança.
+        </p>
+    </div>
+</section>
+
+<!-- CATEGORIAS -->
+<section class="categories">
+    <span class="section-title">Encontre o seu perfil</span>
+    <div class="cat-grid">
+
+        <div class="cat-card">
+            <div class="cat-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 17H3v-5l2.5-5h13l2.5 5v5h-2"/>
+                    <circle cx="7.5" cy="17" r="1.5"/>
+                    <circle cx="16.5" cy="17" r="1.5"/>
+                    <line x1="10" y1="17" x2="14" y2="17"/>
+                </svg>
+            </div>
+            <p class="cat-name">Esportivos</p>
+            <p class="cat-count">Potência e estilo</p>
+        </div>
+
+        <div class="cat-card">
+            <div class="cat-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="10" rx="1"/>
+                    <path d="M5 7V5h14v2"/>
+                    <path d="M2 13h20"/>
+                    <circle cx="7" cy="18" r="1.5"/>
+                    <circle cx="17" cy="18" r="1.5"/>
+                </svg>
+            </div>
+            <p class="cat-name">SUVs &amp; 4&times;4</p>
+            <p class="cat-count">Para qualquer terreno</p>
+        </div>
+
+        <div class="cat-card">
+            <div class="cat-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 17V13l3-6h12l3 6v4"/>
+                    <path d="M7 7l1.5-3h7L17 7"/>
+                    <circle cx="7.5" cy="17.5" r="1.5"/>
+                    <circle cx="16.5" cy="17.5" r="1.5"/>
+                </svg>
+            </div>
+            <p class="cat-name">Sedãs</p>
+            <p class="cat-count">Conforto e elegância</p>
+        </div>
+
+        <div class="cat-card">
+            <div class="cat-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+            </div>
+            <p class="cat-name">Elétricos</p>
+            <p class="cat-count">O futuro já chegou</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- MARCAS QUE VENDEMOS -->
+<section class="brands">
+    <span class="section-tag">O nosso stock</span>
+    <span class="section-title">Marcas que vendemos</span>
+    <p class="brands-intro">
+        Trabalhamos com as marcas mais respeitadas do mercado automóvel, garantindo
+        qualidade, desempenho e valor de revenda para cada cliente.
+    </p>
+    <div class="brands-grid">
+        <a class="brand-pill" href="portfolio.html#marca-mercedes-benz">Mercedes-Benz</a>
+        <a class="brand-pill" href="portfolio.html#marca-bmw">BMW</a>
+        <a class="brand-pill" href="portfolio.html#marca-land-rover">Land Rover</a>
+        <a class="brand-pill" href="portfolio.html#marca-toyota">Toyota</a>
+        <a class="brand-pill" href="portfolio.html#marca-volkswagen">Volkswagen</a>
+        <a class="brand-pill" href="portfolio.html#marca-hyundai">Hyundai</a>
+        <a class="brand-pill" href="portfolio.html#marca-jeep">Jeep</a>
+        <a class="brand-pill" href="portfolio.html#marca-ford">Ford</a>
+        <a class="brand-pill" href="portfolio.html#marca-nissan">Nissan</a>
+    </div>
+</section>
+
+<!-- DESTAQUES -->
+<section class="featured" id="featured">
+    <div class="section-header">
+        <h2 class="section-title">Carros em evidência</h2>
+    </div>
+    <div class="cars-grid">
+
+        <div class="car-card">
+            <div class="car-image-wrap">
+                <img src="../MEDIA/mercedes-benz-classe-c-amg.jpg" alt="Mercedes-Benz Classe C" loading="lazy">
+                <span class="car-badge">Novo</span>
+            </div>
+            <div class="car-info">
+                <p class="car-brand">Mercedes-Benz</p>
+                <p class="car-model">Classe C AMG</p>
+                <div class="car-specs">
+                    <div class="spec">
+                        <span class="spec-label">Ano</span>
+                        <span class="spec-value">2024</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Motor</span>
+                        <span class="spec-value">2.0 Turbo</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">CV</span>
+                        <span class="spec-value">204 cv</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">KM</span>
+                        <span class="spec-value">0 km</span>
+                    </div>
+                </div>
+                <div class="car-footer">
+                    <span class="car-price">15.000.000 Kz</span>
+                    <div class="car-footer-btns">
+                        <button class="btn-view">Ver detalhes</button>
+                        <button class="btn-add-cart" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="10" y1="11" x2="14" y2="11"></line></svg>
+                                Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image-wrap">
+                <img src="../MEDIA/bmw-x6-xdrive.jpg" alt="BMW X6" loading="lazy">
+                <span class="car-badge">Novo</span>
+            </div>
+            <div class="car-info">
+                <p class="car-brand">BMW</p>
+                <p class="car-model">X6 xDrive</p>
+                <div class="car-specs">
+                    <div class="spec">
+                        <span class="spec-label">Ano</span>
+                        <span class="spec-value">2024</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Motor</span>
+                        <span class="spec-value">3.0 Bi-T</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">CV</span>
+                        <span class="spec-value">340 cv</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">KM</span>
+                        <span class="spec-value">0 km</span>
+                    </div>
+                </div>
+                <div class="car-footer">
+                    <span class="car-price">18.000.000 Kz</span>
+                    <div class="car-footer-btns">
+                        <button class="btn-view">Ver detalhes</button>
+                        <button class="btn-add-cart" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="10" y1="11" x2="14" y2="11"></line></svg>
+                                Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image-wrap">
+                <img src="../MEDIA/land-rover-range-rover-sport.jpg" alt="Range Rover Sport" loading="lazy">
+                <span class="car-badge used">Seminovo</span>
+            </div>
+            <div class="car-info">
+                <p class="car-brand">Land Rover</p>
+                <p class="car-model">Range Rover Sport</p>
+                <div class="car-specs">
+                    <div class="spec">
+                        <span class="spec-label">Ano</span>
+                        <span class="spec-value">2023</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Motor</span>
+                        <span class="spec-value">3.0 D6</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">CV</span>
+                        <span class="spec-value">350 cv</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">KM</span>
+                        <span class="spec-value">22.000</span>
+                    </div>
+                </div>
+                <div class="car-footer">
+                    <span class="car-price">25.000.000 Kz</span>
+                    <div class="car-footer-btns">
+                        <button class="btn-view">Ver detalhes</button>
+                        <button class="btn-add-cart" aria-label="Adicionar ao carrinho" title="Adicionar ao carrinho">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="10" y1="11" x2="14" y2="11"></line></svg>
+                                Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+    <div>
+        <span class="promo-tag">Condições especiais &middot; 2026</span>
+        <h2 class="promo-title">Financiamento sem entrada em até 60 prestações</h2>
+    </div>
+    <div class="promo-right">
+        <p class="promo-text">
+            Condições exclusivas para realizar o sonho do carro perfeito.
+            Aprovação rápida, parcelas acessíveis e total transparência no processo.
+        </p>
+        <a href="contactos.html" class="btn-white">Simular Financiamento</a>
+    </div>
+</div>
+
+<!-- MAIS CARROS -->
+<section class="more-cars">
+    <div class="section-header">
+        <h2 class="section-title">Recém chegados</h2>
+    </div>
+    <div class="more-grid">
+
+        <div class="mini-card">
+            <div class="mini-img"><img src="../MEDIA/toyota-land-cruiser.jpg" alt="Toyota Land Cruiser" loading="lazy"></div>
+            <div class="mini-info">
+                <p class="mini-brand">Toyota</p>
+                <p class="mini-model">Land Cruiser</p>
+                <p class="mini-price">12.000.000 Kz</p>
+            </div>
+        </div>
+
+        <div class="mini-card">
+            <div class="mini-img"><img src="../MEDIA/volkswagen-touareg-r-line.jpg" alt="Volkswagen Touareg" class="img-fit-contain" loading="lazy"></div>
+            <div class="mini-info">
+                <p class="mini-brand">Volkswagen</p>
+                <p class="mini-model">Touareg R-Line</p>
+                <p class="mini-price">11.500.000 Kz</p>
+            </div>
+        </div>
+
+        <div class="mini-card">
+            <div class="mini-img"><img src="../MEDIA/hyundai-tucson-n-line.jpg" alt="Hyundai Tucson" loading="lazy"></div>
+            <div class="mini-info">
+                <p class="mini-brand">Hyundai</p>
+                <p class="mini-model">Tucson N-Line</p>
+                <p class="mini-price">8.500.000 Kz</p>
+            </div>
+        </div>
+
+        <div class="mini-card">
+            <div class="mini-img"><img src="../MEDIA/jeep-grand-cherokee.jpg" alt="Jeep Grand Cherokee" loading="lazy"></div>
+            <div class="mini-info">
+                <p class="mini-brand">Jeep</p>
+                <p class="mini-model">Grand Cherokee</p>
+                <p class="mini-price">14.000.000 Kz</p>
+            </div>
+        </div>
+
+        <div class="mini-card">
+            <div class="mini-img"><img src="../MEDIA/ford-mustang-gt.jpg" alt="Ford Mustang GT" loading="lazy"></div>
+            <div class="mini-info">
+                <p class="mini-brand">Ford</p>
+                <p class="mini-model">Mustang GT</p>
+                <p class="mini-price">13.000.000 Kz</p>
+            </div>
+        </div>
+
+        <div class="mini-card">
+            <div class="mini-img"><img src="../MEDIA/nissan-x-trail.jpg" alt="Nissan X-Trail" loading="lazy"></div>
+            <div class="mini-info">
+                <p class="mini-brand">Nissan</p>
+                <p class="mini-model">X-Trail</p>
+                <p class="mini-price">9.000.000 Kz</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- POR QUE NÓS -->
+<section class="why-us">
+    <h2 class="section-title">A nossa diferença</h2>
+    <div class="why-grid">
+        <div class="why-item">
+            <div class="why-number">01</div>
+            <p class="why-title">Curadoria rigorosa</p>
+            <p class="why-text">Cada veículo passa por inspeção técnica completa antes de entrar no nosso stock.</p>
+        </div>
+        <div class="why-item">
+            <div class="why-number">02</div>
+            <p class="why-title">Garantia incluída</p>
+            <p class="why-text">Todos os veículos são entregues com garantia, novos ou seminovos.</p>
+        </div>
+        <div class="why-item">
+            <div class="why-number">03</div>
+            <p class="why-title">Financiamento ágil</p>
+            <p class="why-text">Parceria com os melhores bancos. Aprovação rápida com as melhores taxas do mercado.</p>
+        </div>
+        <div class="why-item">
+            <div class="why-number">04</div>
+            <p class="why-title">Entrega ao domicílio</p>
+            <p class="why-text">O seu carro chega até si. Realizamos entrega em várias províncias com segurança total.</p>
+        </div>
+    </div>
+</section>
+
+<!-- DEPOIMENTOS (resumo) -->
+<section class="home-testimonials">
+    <span class="section-tag">Clientes satisfeitos</span>
+    <span class="section-title">O que dizem sobre nós</span>
+    <div class="depoimentos-grid">
+
+        <div class="depoimento">
+            <div class="depoimento-stars">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="depoimento-texto">"Excelente atendimento e carros em ótimo estado. O processo foi rápido e transparente. Recomendo totalmente a JELODAN-CARS a todos os meus amigos e família."</p>
+            <div class="depoimento-autor">
+                <div class="depoimento-avatar">JM</div>
+                <div>
+                    <div class="depoimento-nome">João Manuel</div>
+                    <div class="depoimento-cargo">Cliente desde 2022</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="depoimento">
+            <div class="depoimento-stars">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="depoimento-texto">"Processo rápido, transparente e muito profissional. O financiamento foi aprovado em menos de dois dias. Estou muito satisfeita com a minha compra."</p>
+            <div class="depoimento-autor">
+                <div class="depoimento-avatar">MA</div>
+                <div>
+                    <div class="depoimento-nome">Maria António</div>
+                    <div class="depoimento-cargo">Cliente desde 2023</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="depoimento">
+            <div class="depoimento-stars">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="depoimento-texto">"Os preços são acessíveis e o suporte ao cliente é excelente. Comprei o meu Land Cruiser e recebi entrega em casa. Serviço de qualidade."</p>
+            <div class="depoimento-autor">
+                <div class="depoimento-avatar">PS</div>
+                <div>
+                    <div class="depoimento-nome">Pedro Silva</div>
+                    <div class="depoimento-cargo">Cliente desde 2021</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <a href="depoimentos.html" class="btn-ghost">Ver todos os depoimentos &rarr;</a>
+</section>
+
+<footer>
+    <div class="footer-conteudo">
+        <div class="footer-marca">
+            <a href="index.html" class="logo-link"><img src="../MEDIA/Logo.png" class="logo" alt="JELODAN-CARS"></a>
+            <p>Compra e Venda de Carros com Segurança e Confiança</p>
+            <div class="footer-social">
+                <a href="https://wa.me/244976667108" class="footer-social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2c-5.523 0-10 4.477-10 10 0 1.766.463 3.489 1.34 5.007L2 22l5.126-1.32A9.958 9.958 0 0 0 12 22c5.523 0 10-4.477 10-10S17.524 2 12.001 2zm0 18.062a8.032 8.032 0 0 1-4.099-1.13l-.294-.175-3.043.784.812-2.968-.192-.304a8.03 8.03 0 0 1-1.232-4.269c0-4.437 3.612-8.049 8.05-8.049 4.437 0 8.048 3.612 8.048 8.049 0 4.438-3.611 8.062-8.05 8.062z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/jelodan_investimentos?igsh=aXl2eDJkMzF0bWhq&utm_source=qr" class="footer-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://www.facebook.com/share/1BFWyXyuZt/?mibextid=wwXIfr" class="footer-social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.02 3.657 9.184 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.877h2.773l-.443 2.91h-2.33V22c4.78-.756 8.437-4.92 8.437-9.94z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Navegação</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="portfolio.html">Galeria</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Informações</h4>
+            <ul>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">Perguntas Frequentes</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="politica.html">Política e Privacidade</a></li>
+                <li><a href="termos.html">Termos e Condições</a></li>
+                <li><a href="sitemap.html">Mapa do Site</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="footer-payments">
+        <span class="footer-payments-label">Formas de Pagamento:</span>
+        <div class="payment-methods">
+            <span class="payment-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="4.5" width="21" height="15" rx="2.5"></rect><line x1="1.5" y1="9.5" x2="22.5" y2="9.5"></line><line x1="5" y1="15" x2="9" y2="15"></line></svg>
+                Multicaixa
+            </span>
+            <span class="payment-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="1.5" width="12" height="21" rx="2.5"></rect><line x1="6" y1="18" x2="18" y2="18"></line></svg>
+                Multicaixa Express
+            </span>
+            <span class="payment-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"></path><line x1="4" y1="10" x2="20" y2="10"></line><line x1="5" y1="10" x2="5" y2="19"></line><line x1="10" y1="10" x2="10" y2="19"></line><line x1="14" y1="10" x2="14" y2="19"></line><line x1="19" y1="10" x2="19" y2="19"></line><line x1="3" y1="21" x2="21" y2="21"></line></svg>
+                Transferência Bancária
+            </span>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <p>&copy; 2026 JELODAN-CARS. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
